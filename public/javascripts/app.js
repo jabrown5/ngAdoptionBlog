@@ -20,7 +20,19 @@ angular.module('adoptionBlog', [ 'ngRoute'
             .when('/create' , {
                 templateUrl: 'ngViews/create.html',
                 controller: 'AdminCreateCtrl'
-            });
+            })
+            .when('/admin', {
+                templateUrl: 'ngViews/admin.html',
+                controller: 'AdminDeleteCtrl'
+            })
+            .when('/cats', {
+                templateUrl: 'ngViews/cat.html',
+                controller: 'CatsCtrl'
+            })
+            .when('/dogs', {
+                templateUrl: 'ngViews/dog.html',
+                controller: 'DogsCtrl'
+            })
 
         $routeProvider.otherwise({ redirectTo: '/' });
     }
