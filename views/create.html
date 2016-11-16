@@ -1,0 +1,11 @@
+<h1>Admin: Create Blog Post</h1>
+
+{{message}}
+
+<form ng-submit="createPost(title, contents, tags)">
+    <input type="text" ng-model="title"     placeholder="Blog title here">
+    <input type="text" ng-model="contents"  placeholder="Blog contents here">
+    <input type="text" ng-model="tags"      placeholder="Add,tags,like,this">
+    <input type="submit" value="Add Post">
+
+</form>

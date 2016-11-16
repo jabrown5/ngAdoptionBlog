@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--this defines your module-->
+<html ng-app="adoptionBlog">
+  <head>
+    <title>The Best Adoption Blog EVER!</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!--<script src="/javascripts/angular.min.js"></script>-->
+    <script src="/javascripts/angular.js"></script>
+
+    <script src="/javascripts/angular-route.min.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/app.PostsCtrl.js"></script>
+    <!--<script src="/javascripts/app.AdminCreate.js"></script>-->
+
+  </head>
+
+  <body>
+
+  <header>
+    <img src="/images/logo.png" alt="Piano key necktie">
+    <hr>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/admin">Admin</a></li>
+      <li><a href="/create">Add Posts</a></li>
+      <li><a href="/cats">See Cats</a></li>
+      <li><a href="/dogs">See Dogs</a></li>
+
+    </ul>
+    <hr>
+  </header>
+
+  <!--this is similar to yield/body in erb/hbs-->
+  <!--this is where we load our angular view from-->
+  <div ng-view></div>
+
+
+  <footer>
+    <hr>
+    &copy 2016 through FOREVER!
+  </footer>
+
+  </body>
+</html>
